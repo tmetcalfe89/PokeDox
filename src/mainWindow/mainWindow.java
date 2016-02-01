@@ -1469,7 +1469,7 @@ public class mainWindow extends javax.swing.JFrame {
 
         int natlDex = pokeList.getNatlDexAt(row);
 
-        int imgY = ((natlDex / 27) * 33) + 1;
+        int imgY = (((natlDex - 1) / 27) * 33) + 1;
         int imgX = (((natlDex - 1) % 27) * 33) + 1;
 
         img = masterImg.getSubimage(imgX, imgY, 32, 32);
@@ -1522,6 +1522,7 @@ public class mainWindow extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
+
 
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
